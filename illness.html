@@ -3,20 +3,49 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DayZ Illness Guide | Cholera, Flu, Infection & Poisoning</title>
-  <meta name="description" content="DayZ illness guide explaining symptoms, causes and treatment for cholera, flu, wound infection, salmonella and poisoning.">
+  <title>DayZ Illness Guide | Interactive Symptom & Cure Finder</title>
+  <meta name="description" content="Interactive DayZ illness guide. Select symptoms and causes to find the likely disease, cure, medicine and survival steps.">
   <link rel="stylesheet" href="style.css">
   <script src="js/layout.js" defer></script>
+  <script src="js/illness-guide.js" defer></script>
 </head>
+
 <body>
   <div id="site-navbar"></div>
 
   <main>
     <section class="page-hero">
       <div class="container">
-        <span class="badge">Medical</span>
-        <h1>Illness Guide</h1>
-        <p class="section-text">Disease kills slowly. Identify symptoms early, stop the cause and treat before your stats collapse.</p>
+        <span class="badge">Interactive Medical Guide</span>
+        <h1>DayZ Illness Guide</h1>
+        <p class="section-text">
+          Choose your symptoms first. The guide filters possible causes, then shows the most likely illness and cure.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container illness-tool">
+        <div class="illness-panel">
+          <h2>1. Select symptoms</h2>
+          <p>Pick everything you notice in-game.</p>
+
+          <div class="choice-grid" id="symptomChoices"></div>
+        </div>
+
+        <div class="illness-panel">
+          <h2>2. Possible causes</h2>
+          <p>Filtered by your selected symptoms.</p>
+
+          <div class="choice-grid" id="causeChoices"></div>
+        </div>
+
+        <div class="illness-panel illness-result">
+          <h2>3. Diagnosis & cure</h2>
+          <div id="illnessResult">
+            <p class="empty-state">Select symptoms to begin.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -24,23 +53,37 @@
       <div class="container content-layout">
         <aside class="sidebar">
           <a href="#cholera">Cholera</a>
-          <a href="#flu">Flu</a>
           <a href="#salmonella">Salmonella</a>
+          <a href="#cold">Cold / Flu</a>
           <a href="#infection">Wound infection</a>
+          <a href="#poisoning">Poisoning</a>
+          <a href="#kuru">Kuru</a>
         </aside>
 
         <article class="article">
           <h2 id="cholera">Cholera</h2>
-          <p>Usually caused by unsafe water. Symptoms include vomiting after eating or drinking. Drink tiny amounts, eat slowly and use tetracycline. Vitamins can help your immune system.</p>
+          <p><strong>Cause:</strong> Dirty water, unsafe bottles or contaminated containers.</p>
+          <p><strong>Cure:</strong> Tetracycline pills. Multivitamins can help your immune system. Drink tiny sips and eat tiny bites to avoid vomiting.</p>
 
-          <h2 id="flu">Flu / cold</h2>
-          <p>Often caused by being cold or wet. Stay warm, dry your clothes, eat and drink carefully and use tetracycline or vitamins.</p>
+          <h2 id="salmonella">Salmonella / food poisoning</h2>
+          <p><strong>Cause:</strong> Raw meat, rotten food, bloody hands or unsafe animal products.</p>
+          <p><strong>Cure:</strong> Charcoal tablets or multivitamins. Eat and drink slowly.</p>
 
-          <h2 id="salmonella">Salmonella</h2>
-          <p>Usually caused by eating raw meat or eating with bloody hands. Use charcoal tablets and avoid eating large amounts until stable.</p>
+          <h2 id="cold">Common cold / influenza</h2>
+          <p><strong>Cause:</strong> Being cold, wet, low immunity or close contact with sick survivors.</p>
+          <p><strong>Cure:</strong> Stay warm, dry your clothes, eat, drink, use tetracycline or multivitamins.</p>
 
           <h2 id="infection">Wound infection</h2>
-          <p>Can happen after using dirty rags or untreated bandages. Early stage can be treated with disinfectant. Later stage usually requires tetracycline.</p>
+          <p><strong>Cause:</strong> Dirty rags, dirty bandages or letting bleeding heal untreated.</p>
+          <p><strong>Cure:</strong> Early stage: disinfect wound. Later stage: tetracycline. Use clean bandages next time.</p>
+
+          <h2 id="poisoning">Poisoning / chemical sickness</h2>
+          <p><strong>Cause:</strong> Toxic zones, chemicals, gasoline, disinfectant or contaminated exposure.</p>
+          <p><strong>Cure:</strong> Charcoal tablets where relevant, clean food/water, leave the toxic area and stabilize stats.</p>
+
+          <h2 id="kuru">Kuru / brain prion disease</h2>
+          <p><strong>Cause:</strong> Eating human meat or human fat.</p>
+          <p><strong>Cure:</strong> No practical cure. Avoid cannibalism unless you accept permanent symptoms.</p>
         </article>
       </div>
     </section>
