@@ -542,3 +542,110 @@ h1 {
     padding: 20px;
   }
 }
+.illness-tool {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.illness-panel {
+  border: 1px solid var(--border);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.015)),
+    var(--panel);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+
+.illness-result {
+  grid-column: 1 / -1;
+}
+
+.illness-panel h2 {
+  margin: 0 0 8px;
+}
+
+.illness-panel p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.choice-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.choice-btn {
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.045);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.choice-btn:hover,
+.choice-btn.active {
+  background: rgba(189,168,110,0.16);
+  color: var(--accent);
+  border-color: rgba(189,168,110,0.55);
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.result-card {
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(0,0,0,0.22);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+}
+
+.result-card h3 {
+  margin: 0 0 8px;
+  color: var(--accent);
+}
+
+.result-card ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+
+.result-card li {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.match-score {
+  display: inline-flex;
+  margin-bottom: 10px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(127,143,87,0.18);
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.empty-state {
+  color: var(--muted);
+  margin: 0;
+}
+
+@media (max-width: 820px) {
+  .illness-tool,
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .illness-result {
+    grid-column: auto;
+  }
+}
