@@ -1,2 +1,3 @@
-# dayz-survival-guide
-Complete DayZ survival guide with beginner tutorials, illness cures, loot routes, PvP tactics, base building, vehicles and map guides.
+# DayZ Survival Guide
+
+Concept 3 / Magazine Strategy Layout. Dark premium gaming UI, Danish/English language switcher, SEO files, internal links and monetization-ready zones. Deploy with Vercel as a static site; no build command required.

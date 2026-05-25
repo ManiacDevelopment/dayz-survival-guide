@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dayz-survival-guide.vercel.app/sitemap.xml

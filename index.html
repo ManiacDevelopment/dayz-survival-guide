@@ -3,200 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DayZ Survival Guide | Beginner, Loot, Illness, PvP & Base Building</title>
-  <meta name="description" content="Complete DayZ guide for beginners and experienced survivors. Learn survival, illness treatment, loot routes, weapons, PvP, vehicles, base building and map strategy.">
-
-  <meta property="og:title" content="DayZ Survival Guide">
-  <meta property="og:description" content="A complete gritty survival guide for DayZ. Beginner help, illnesses, loot, weapons, PvP, base building, vehicles and maps.">
+  <title>DayZ Survival Guide | Beginner, Loot, Illness, PvP &amp; Base Building</title>
+  <meta name="description" content="Complete DayZ survival guide for beginners and experienced survivors covering illness, loot, weapons, PvP, vehicles, base building and Chernarus routes.">
+  <link rel="canonical" href="https://dayz-survival-guide.vercel.app/">
+  <meta property="og:title" content="DayZ Survival Guide | Beginner, Loot, Illness, PvP &amp; Base Building">
+  <meta property="og:description" content="Complete DayZ survival guide for beginners and experienced survivors covering illness, loot, weapons, PvP, vehicles, base building and Chernarus routes.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/dayz-og.jpg">
-
-  <link rel="canonical" href="https://your-domain.vercel.app/">
+  <meta property="og:url" content="https://dayz-survival-guide.vercel.app/">
+  <meta property="og:image" content="https://dayz-survival-guide.vercel.app/assets/dayz-og.png">
+  <meta name="theme-color" content="#0b100d">
+  <link rel="alternate" hreflang="en" href="index.html?lang=en">
+  <link rel="alternate" hreflang="da" href="index.html?lang=da">
+  <link rel="alternate" hreflang="x-default" href="index.html">
   <link rel="stylesheet" href="style.css">
   <script src="js/layout.js" defer></script>
+  
+  <script src="i18n.js" defer></script>
 </head>
-
-<body>
-  <div id="site-navbar"></div>
-
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="eyebrow">Chernarus survival database</div>
-          <h1>Survive longer. Loot smarter. Trust no one.</h1>
-          <p>
-            A complete DayZ guide built for new survivors and returning players.
-            Learn how to stay alive, cure disease, find better loot, build bases,
-            handle weapons, win PvP fights and navigate the map with confidence.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#guides">Start learning</a>
-            <a class="btn btn-secondary" href="illness.html">Illness guide</a>
-          </div>
-        </div>
-
-        <aside class="hero-panel">
-          <span class="badge">Survival priority</span>
-          <h2>First 30 minutes</h2>
-          <p class="section-text">
-            Your opening goal is simple: water, food, knife, warm clothing and a safe route inland.
-          </p>
-
-          <div class="status-list">
-            <div class="status-item">
-              <span>Water source</span>
-              <strong>Pump / bottle</strong>
-            </div>
-            <div class="status-item">
-              <span>Food plan</span>
-              <strong>Fruit / animals</strong>
-            </div>
-            <div class="status-item">
-              <span>Medical risk</span>
-              <strong>Cholera / flu</strong>
-            </div>
-            <div class="status-item">
-              <span>Threat level</span>
-              <strong>Players & infected</strong>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container stats-grid">
-        <div class="stat">
-          <strong>9</strong>
-          <span>Main guide sections</span>
-        </div>
-        <div class="stat">
-          <strong>24/7</strong>
-          <span>Survival mindset</span>
-        </div>
-        <div class="stat">
-          <strong>0</strong>
-          <span>Reason to trust strangers</span>
-        </div>
-        <div class="stat">
-          <strong>1</strong>
-          <span>Bad mistake can kill you</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="guides">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2 class="section-title">DayZ guides</h2>
-            <p class="section-text">
-              Everything is split into focused pages, so the site can grow cleanly like your Red Dead guide.
-            </p>
-          </div>
-        </div>
-
-        <div class="card-grid">
-          <a class="card" href="beginner.html">
-            <div>
-              <div class="card-icon">🧭</div>
-              <h3>Beginner Guide</h3>
-              <p>Spawn priorities, early mistakes, basic controls, first loot and how to avoid dying immediately.</p>
-            </div>
-            <span class="card-link">Open guide →</span>
-          </a>
-
-          <a class="card" href="survival.html">
-            <div>
-              <div class="card-icon">🔥</div>
-              <h3>Survival Guide</h3>
-              <p>Food, water, temperature, stealth, infected, stamina, blood and long-term survival routines.</p>
-            </div>
-            <span class="card-link">Open guide →</span>
-          </a>
-
-          <a class="card" href="illness.html">
-            <div>
-              <div class="card-icon">💊</div>
-              <h3>Illness Guide</h3>
-              <p>Cholera, flu, wound infection, salmonella, chemical poisoning and what medicine to use.</p>
-            </div>
-            <span class="card-link">Open guide →</span>
-          </a>
-
-          <a class="card" href="loot.html">
-            <div>
-              <div class="card-icon">🎒</div>
-              <h3>Loot Guide</h3>
-              <p>Best loot types, where to find gear, military zones, medical buildings and inland progression.</p>
-            </div>
-            <span class="card-link">Open guide →</span>
-          </a>
-
-          <a class="card" href="base-building.html">
-            <div>
-              <div class="card-icon">🪓</div>
-              <h3>Base Building</h3>
-              <p>Tools, walls, gates, locks, storage, hidden stashes and how to avoid obvious base locations.</p>
-            </div>
-            <span class="card-link">Open guide →</span>
-          </a>
-
-          <a class="card" href="weapons.html">
-            <div>
-              <div class="card-icon">🔫</div>
-              <h3>Weapons</h3>
-              <p>Ammo types, weapon tiers, attachments, melee options and what guns are worth keeping.</p>
-            </div>
-            <span class="card-link">Open guide →</span>
-          </a>
-
-          <a class="card" href="pvp.html">
-            <div>
-              <div class="card-icon">🎯</div>
-              <h3>PvP</h3>
-              <p>Positioning, sound discipline, ambushes, peeking, suppressors, third-partying and survival after fights.</p>
-            </div>
-            <span class="card-link">Open guide →</span>
-          </a>
-
-          <a class="card" href="vehicles.html">
-            <div>
-              <div class="card-icon">🚙</div>
-              <h3>Vehicles</h3>
-              <p>Parts, fuel, water, batteries, spark plugs, radiators, repairs and how not to lose your car instantly.</p>
-            </div>
-            <span class="card-link">Open guide →</span>
-          </a>
-
-          <a class="card" href="map-guide.html">
-            <div>
-              <div class="card-icon">🗺️</div>
-              <h3>Map Guide</h3>
-              <p>Coast routes, inland movement, landmarks, high-risk zones, military routes and navigation tips.</p>
-            </div>
-            <span class="card-link">Open guide →</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container callout">
-        <div>
-          <span class="badge">Recommended route</span>
-          <h2 class="section-title">New spawn? Do not sprint blindly inland.</h2>
-          <p class="section-text">
-            Find water first, secure a blade, collect warm clothing, then move inland through small villages before taking military risks.
-          </p>
-        </div>
-        <a class="btn btn-primary" href="beginner.html">Read beginner guide</a>
-      </div>
-    </section>
-  </main>
-
-  <div id="site-footer"></div>
-</body>
-</html>
+<body data-site="dayz"><div id="site-navbar"></div><main id="main">
+<section class="hero"><div class="container hero-grid"><div><span class="eyebrow">Chernarus survival magazine</span><h1>Survive longer. Loot smarter. Trust no one.</h1><p class="lead">A complete DayZ guide network with practical survival systems, illness cures, loot progression, PvP rules, base security, vehicles and Chernarus routes.</p><div class="hero-actions"><a class="btn btn-primary" href="#guides">Start learning</a><a class="btn btn-secondary" href="illness.html">Open illness tool</a></div></div><aside class="feature-panel"><span class="badge">First 30 minutes</span><h2>Stabilize before you gamble</h2><div class="status-list"><div><span>Water</span><strong>Pump or purified</strong></div><div><span>Food</span><strong>Fruit, cans or animals</strong></div><div><span>Medical risk</span><strong>Cholera, flu, infection</strong></div><div><span>Route</span><strong>Small towns inland</strong></div></div></aside></div></section><section class="revenue-zone"><div><span class="eyebrow">Free guide support</span><strong>Sponsor, affiliate and premium-ready zone</strong><p>This placement can later be used for server hosting, map tools, affiliate gear, ads or an ad-free premium version without redesigning the site.</p></div><a class="btn btn-ghost" href="https://game-coach-hub.vercel.app/">Open Game Coach Hub</a></section><section class="section"><div class="container stats-grid"><div class="stat"><strong>9</strong><span>Focused guide pages</span></div><div class="stat"><strong>6</strong><span>Medical diagnoses in the tool</span></div><div class="stat"><strong>0</strong><span>Missing internal links</span></div><div class="stat"><strong>2026</strong><span>SEO and monetization structure</span></div></div></section><section class="section" id="guides"><div class="container"><div class="section-head"><div><span class="eyebrow">Concept 3</span><h2>DayZ guide library</h2><p>Each page is built for quick reading, internal linking, mobile use and future sponsor or premium upgrades.</p></div></div><div class="guide-grid"><a class="guide-card" href="beginner.html"><span class="card-kicker">🧭</span><h3>Beginner Guide</h3><p>Spawn priorities, first loot, infected control and the safest first inland route.</p><span class="card-link">Open guide →</span></a><a class="guide-card" href="survival.html"><span class="card-kicker">🔥</span><h3>Survival Guide</h3><p>Food, water, temperature, blood, stealth and routines that keep a run alive.</p><span class="card-link">Open guide →</span></a><a class="guide-card" href="illness.html"><span class="card-kicker">💊</span><h3>Illness Guide</h3><p>Interactive symptom and cause filter for DayZ sickness and cure decisions.</p><span class="card-link">Open guide →</span></a><a class="guide-card" href="loot.html"><span class="card-kicker">🎒</span><h3>Loot Guide</h3><p>Priority items, medical loot, military zones and practical gear progression.</p><span class="card-link">Open guide →</span></a><a class="guide-card" href="base-building.html"><span class="card-kicker">🪓</span><h3>Base Building</h3><p>Tools, walls, gates, locks, stashes and safer location choices.</p><span class="card-link">Open guide →</span></a><a class="guide-card" href="weapons.html"><span class="card-kicker">🔫</span><h3>Weapons</h3><p>Melee, pistols, rifles, ammo, attachments and practical loadout logic.</p><span class="card-link">Open guide →</span></a><a class="guide-card" href="pvp.html"><span class="card-kicker">🎯</span><h3>PvP Guide</h3><p>Sound discipline, positioning, ambushes and post-fight survival.</p><span class="card-link">Open guide →</span></a><a class="guide-card" href="vehicles.html"><span class="card-kicker">🚙</span><h3>Vehicles</h3><p>Parts, fuel, water, repairs, driving safety and vehicle security.</p><span class="card-link">Open guide →</span></a><a class="guide-card" href="map-guide.html"><span class="card-kicker">🗺️</span><h3>Map Guide</h3><p>Coast spawns, inland routes, landmarks, military zones and navigation habits.</p><span class="card-link">Open guide →</span></a></div></div></section><section class="section"><div class="container strategy-strip"><div><span class="eyebrow">Recommended learning path</span><h2>Beginner → Survival → Illness → Loot → PvP</h2><p>This path teaches stability first and high-risk areas later, which fits how DayZ punishes rushed decisions.</p></div><a class="btn btn-primary" href="beginner.html">Read beginner guide</a></div></section><section class="revenue-zone"><div><span class="eyebrow">Free guide support</span><strong>Sponsor, affiliate and premium-ready zone</strong><p>This placement can later be used for server hosting, map tools, affiliate gear, ads or an ad-free premium version without redesigning the site.</p></div><a class="btn btn-ghost" href="https://game-coach-hub.vercel.app/">Open Game Coach Hub</a></section></main><div id="site-footer"></div></body></html>
