@@ -1,6 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DayZ Base Building Guide | Tools, Gates, Locks & Stashes</title>
+  <meta name="description" content="DayZ base building guide covering tools, walls, gates, locks, storage, hidden stashes and base location strategy.">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/layout.js" defer></script>
+  <link rel="alternate" hreflang="en" href="base-building.html?lang=en">
+  <link rel="alternate" hreflang="da" href="base-building.html?lang=da">
+  <script src="i18n.js" defer></script>
+</head>
+<body data-site="dayz">
+  <div id="site-navbar"></div>
 
-(function(){
-const links=[['Home','index.html'],['Beginner','beginner.html'],['Survival','survival.html'],['Illness','illness.html'],['Loot','loot.html'],['Base','base-building.html'],['Weapons','weapons.html'],['PvP','pvp.html'],['Vehicles','vehicles.html'],['Map','map-guide.html'],['Network','https://game-coach-hub.vercel.app/']];
-const current=location.pathname.split('/').pop()||'index.html';
-function nav(){const mount=document.getElementById('site-navbar');const h=document.createElement('header');h.className='gch-header';h.innerHTML='<a class="skip-link" href="#main">Skip to content</a><div class="gch-container gch-nav"><a class="gch-brand" href="index.html"><span class="gch-brand-mark">☣</span><span>DayZ Guide<small>Survival archive</small></span></a><button class="gch-nav-toggle" type="button" aria-expanded="false">Menu</button><nav class="gch-links" aria-label="Main navigation">'+links.map(([l,u])=>'<a href="'+u+'" class="'+(u===current?'active':'')+'">'+l+'</a>').join('')+'<div class="gch-language-switch" data-no-i18n="true"><button class="gch-lang-btn" type="button" data-lang="en">EN</button><button class="gch-lang-btn" type="button" data-lang="da">DA</button></div></nav></div>';mount.replaceWith(h);const b=h.querySelector('.gch-nav-toggle'),m=h.querySelector('.gch-links');b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o));});}
-function foot(){const mount=document.getElementById('site-footer');const f=document.createElement('footer');f.className='gch-footer';f.innerHTML='<div class="gch-container gch-footer-grid"><div><strong>DayZ Guide</strong><p>Fan-made survival guide built as part of the Game Coach Hub network.</p><small>© '+new Date().getFullYear()+' DayZ Guide</small></div><div><strong>Network</strong><p><a href="index.html">Home</a><br><a href="https://game-coach-hub.vercel.app/">Game Coach Hub</a></p></div><div><strong>Monetization ready</strong><p>Sponsor, affiliate and premium zones are built into the layout without blocking the guide content.</p></div></div>';mount.replaceWith(f);}document.readyState==='loading'?document.addEventListener('DOMContentLoaded',()=>{nav();foot();}):(nav(),foot());})();
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="badge">Base Building</span>
+        <h1>Base Building</h1>
+        <p class="section-text">A base is never perfectly safe. Build smart, hide better and never store everything in one place.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-layout">
+        <aside class="sidebar">
+          <a href="#tools">Tools</a>
+          <a href="#walls">Walls & gates</a>
+          <a href="#location">Location</a>
+          <a href="#stashes">Stashes</a>
+        </aside>
+
+        <article class="article">
+          <h2 id="tools">Tools</h2>
+          <p>You need tools such as hatchets, saws, shovels, hammers, pliers, nails, wire and combination locks depending on your build.</p>
+
+          <h2 id="walls">Walls & gates</h2>
+          <p>Walls protect storage but also advertise that loot exists. Gates need wire and pliers. Combination locks are essential but not permanent protection.</p>
+
+          <h2 id="location">Location</h2>
+          <p>Avoid obvious barns, police stations and high-traffic military routes. Remote bases survive longer, but hidden stashes often survive longest.</p>
+
+          <h2 id="stashes">Stashes</h2>
+          <p>Split important gear between buried stashes, crates and alternate locations. Do not keep all weapons, medicine and tools in one base.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+<script src="monetization.js" defer></script>
+</body>
+</html>
